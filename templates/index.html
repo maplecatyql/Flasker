@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Index</title>
 </head>
 <body>
+{% extends 'base.html' %}
+
+    {% block content %}
     <h1>Hello World!</h1>
 
     <p>This is my first webpage!!!</p>
@@ -30,5 +33,6 @@
     <br>
     {{ favorite_pizza.3 | string + "100" }}
     {{ favorite_pizza.1 | reverse }}
+{% endblock %}
 </body>
 </html>

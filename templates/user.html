@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>User</title>
 </head>
 <body>
+{% extends 'base.html' %}
+
+    {% block content %}
 <!--    <h1>Hello {{ user_name | upper }}</h1>-->
 <!--    <h1>Hello {{ user_name | capitalize }}</h1>-->
-    <h1>Hello {{ user_name | lower }}</h1>
-
+    <h1>Hello {{ user_name | title }}</h1>
+{% endblock %}
 </body>
 </html>
